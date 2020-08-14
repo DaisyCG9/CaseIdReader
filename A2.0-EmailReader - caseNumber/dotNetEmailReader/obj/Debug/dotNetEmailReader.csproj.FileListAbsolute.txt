@@ -1,0 +1,58 @@
+C:\project\dotNetEmailReader\dotNetEmailReader\bin\Debug\dotNetEmailReader.exe.config
+C:\project\dotNetEmailReader\dotNetEmailReader\bin\Debug\dotNetEmailReader.exe
+C:\project\dotNetEmailReader\dotNetEmailReader\bin\Debug\dotNetEmailReader.pdb
+C:\project\dotNetEmailReader\dotNetEmailReader\obj\Debug\dotNetEmailReader.csprojAssemblyReference.cache
+C:\project\dotNetEmailReader\dotNetEmailReader\obj\Debug\dotNetEmailReader.csproj.CoreCompileInputs.cache
+C:\project\dotNetEmailReader\dotNetEmailReader\obj\Debug\dotNetEmailReader.exe
+C:\project\dotNetEmailReader\dotNetEmailReader\obj\Debug\dotNetEmailReader.pdb
+C:\project\msTool\dotNetEmailReader\dotNetEmailReader\obj\Debug\dotNetEmailReader.csprojAssemblyReference.cache
+C:\project\msTool\dotNetEmailReader\dotNetEmailReader\obj\Debug\dotNetEmailReader.csproj.CoreCompileInputs.cache
+C:\project\msTool\dotNetEmailReader\dotNetEmailReader\obj\Debug\dotNetEmailReader.exe
+C:\project\msTool\dotNetEmailReader\dotNetEmailReader\obj\Debug\dotNetEmailReader.pdb
+C:\project\msTool\dotNetEmailReader\dotNetEmailReader\bin\Debug\dotNetEmailReader.exe.config
+C:\project\msTool\dotNetEmailReader\dotNetEmailReader\bin\Debug\dotNetEmailReader.exe
+C:\project\msTool\dotNetEmailReader\dotNetEmailReader\bin\Debug\dotNetEmailReader.pdb
+C:\project\msTool\EmailReader - copy\dotNetEmailReader\bin\Debug\dotNetEmailReader.exe.config
+C:\project\msTool\EmailReader - copy\dotNetEmailReader\bin\Debug\dotNetEmailReader.exe
+C:\project\msTool\EmailReader - copy\dotNetEmailReader\bin\Debug\dotNetEmailReader.pdb
+C:\project\msTool\EmailReader - copy\dotNetEmailReader\obj\Debug\dotNetEmailReader.csprojAssemblyReference.cache
+C:\project\msTool\EmailReader - copy\dotNetEmailReader\obj\Debug\dotNetEmailReader.csproj.CoreCompileInputs.cache
+C:\project\msTool\EmailReader - copy\dotNetEmailReader\obj\Debug\dotNetEmailReader.exe
+C:\project\msTool\EmailReader - copy\dotNetEmailReader\obj\Debug\dotNetEmailReader.pdb
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\bin\Debug\dotNetEmailReader.exe.config
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\bin\Debug\dotNetEmailReader.exe
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\bin\Debug\dotNetEmailReader.pdb
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\bin\Debug\BouncyCastle.Crypto.dll
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\bin\Debug\NPOI.dll
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\bin\Debug\NPOI.OOXML.dll
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\bin\Debug\NPOI.OpenXml4Net.dll
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\bin\Debug\BouncyCastle.Crypto.xml
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\obj\Debug\dotNetEmailReader.csprojAssemblyReference.cache
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\obj\Debug\dotNetEmailReader.csproj.CoreCompileInputs.cache
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\obj\Debug\dotNetEmailReader.csproj.CopyComplete
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\obj\Debug\dotNetEmailReader.exe
+C:\project\msTool\EmailReader - caseNumber\dotNetEmailReader\obj\Debug\dotNetEmailReader.pdb
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\dotNetEmailReader.exe.config
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\dotNetEmailReader.exe
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\dotNetEmailReader.pdb
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\BouncyCastle.Crypto.dll
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\NPOI.dll
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\NPOI.OOXML.dll
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\NPOI.OpenXml4Net.dll
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\BouncyCastle.Crypto.xml
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\obj\Debug\dotNetEmailReader.csprojAssemblyReference.cache
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\obj\Debug\dotNetEmailReader.csproj.CoreCompileInputs.cache
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\obj\Debug\dotNetEmailReader.csproj.CopyComplete
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\obj\Debug\dotNetEmailReader.exe
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\obj\Debug\dotNetEmailReader.pdb
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\nunit.framework.dll
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\nunit.framework.pdb
+C:\project\msTool\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\nunit.framework.xml
