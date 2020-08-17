@@ -40,6 +40,7 @@ namespace dotNetEmailReader
                 if (match1.Success)
                 {
                     id.Add(match1.Value);
+                   // Console.WriteLine( mail.EmailTo);
                 }    
             }
             //Sort the numbers from the oldest to the lastest.

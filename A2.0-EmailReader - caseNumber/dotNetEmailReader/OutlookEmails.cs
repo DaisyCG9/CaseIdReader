@@ -1,4 +1,5 @@
 ﻿using Microsoft.Office.Interop.Outlook;
+using System.Runtime.InteropServices;
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
@@ -13,7 +14,8 @@ namespace dotNetEmailReader
         public string EmailFrom { get; set; }
         public string EmailSubject { get; set; }
         public string EmailBody { get; set; }
-        //public string EmailSend { get; set; }
+        public string EmailTo { get; set; }
+        public DateTime EmailDate { get; set; }
 
         public static List<OutlookEmails> ReadMailItems()
         { 
@@ -30,15 +32,21 @@ namespace dotNetEmailReader
                 outlookNamespace = outlookApplication.GetNamespace("MAPI");
                 inboxFolder = outlookNamespace.GetDefaultFolder(OlDefaultFolders.olFolderInbox);
                 mailItems = inboxFolder.Items;
-                foreach(dynamic item in mailItems)
-                {
-                    emailDetails = new OutlookEmails();
-                    emailDetails.EmailFrom = item.SenderEmailAddress;
-                    emailDetails.EmailSubject = item.Subject;
-                    emailDetails.EmailBody = item.Body;
-                   // emailDetails.EmailSend = item;
-                    listEmailDetails.Add(emailDetails);
-                    ReleaseComObject(item);
+                foreach (dynamic item in mailItems)
+               {
+                    if(item is MailItem)
+                    {
+                           emailDetails = new OutlookEmails();
+                           emailDetails.EmailFrom = item.SenderEmailAddress;
+                           emailDetails.EmailSubject = item.Subject;
+                           emailDetails.EmailBody = item.Body;
+                           emailDetails.EmailTo = item.To;
+                           emailDetails.EmailDate = item.CreationTime;
+                        
+                           listEmailDetails.Add(emailDetails);
+                       
+                           ReleaseComObject(item);
+                    }
                 }
             }
             catch (System.Exception ex)
@@ -58,7 +66,7 @@ namespace dotNetEmailReader
         {
             if(obj !=null)
             {
-                System.Runtime.InteropServices.Marshal.ReleaseComObject(obj);
+                Marshal.ReleaseComObject(obj);
                 obj = null;
             }
         }
