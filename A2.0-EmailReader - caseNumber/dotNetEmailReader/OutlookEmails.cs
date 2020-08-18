@@ -41,7 +41,7 @@ namespace dotNetEmailReader
                            emailDetails.EmailSubject = item.Subject;
                            emailDetails.EmailBody = item.Body;
                            emailDetails.EmailTo = item.To;
-                           emailDetails.EmailDate = item.CreationTime;
+                           emailDetails.EmailDate = item.ReceivedTime;
                         
                            listEmailDetails.Add(emailDetails);
                        

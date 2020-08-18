@@ -9,11 +9,12 @@ namespace dotNetEmailReader
 {
     class writeExcel
     {
-        public class Nums
+        public class con
         {
-            public int CaseNumber { get; set; }
-
-            public string Number { get; set; }
+            public string caseId { get; set; }
+            public DateTime time { get; set; }
+            public string isTask { get; set; }
+            public string alias { get; set; }
 
         }
       

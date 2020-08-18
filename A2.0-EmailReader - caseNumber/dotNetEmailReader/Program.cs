@@ -16,20 +16,22 @@ namespace dotNetEmailReader
     {
         static void Main(string[] args)
         {
-            // CaseNumberReader();
             Console.WriteLine("-----caseNumber-----");
             //CaseNumberReader();
-            Console.WriteLine(string.Join("\n",CaseNumberReader()));
-             ExcelTest();
+           // Console.WriteLine(string.Join("\n",CaseNumberReader()));
+            
+            ExcelTest();
    
             Console.ReadKey();
         }
 
         
 
-        public static List<String> CaseNumberReader()
+        public static List<con> CaseNumberReader()
         {
-            List<string> id = new List<string>();
+            List<con> writeCon = new List<con>();
+            //List<string> id = new List<string>();
+           // List<DateTime> time = new List<DateTime>();
             var mails = OutlookEmails.ReadMailItems();
 
             foreach (var mail in mails)
@@ -39,29 +41,51 @@ namespace dotNetEmailReader
                 Match match1 = Regex.Match(CaseReader, pattern1, RegexOptions.IgnoreCase);
                 if (match1.Success)
                 {
-                    id.Add(match1.Value);
-                   // Console.WriteLine( mail.EmailTo);
+                    con data = new con() { caseId = match1.Value, time = mail.EmailDate, alias = mail.EmailTo };
+                    writeCon.Add(data);
+                    //id.Add(match1.Value);
+                    //time.Add(mail.EmailDate);
+                    //Console.WriteLine(id);
+                   //Console.WriteLine(time);
+                  // Console.WriteLine( mail.EmailTo);
                 }    
             }
             //Sort the numbers from the oldest to the lastest.
-            id.Sort();
+            // id.Sort();
             //remove the dulplicate numbers
-            List<string> id1=id.Distinct().ToList();
-            //Console.WriteLine(string.Join("\n", id1));
-           
-            return id1;
+            // List<string> id1=id.Distinct().ToList();
+            // time.ToString();
+            // Console.WriteLine(string.Join("\n", time)); 
+            //  return id1;
+           var sortedData =
+             (from s in writeCon
+              select new
+              {
+                  s.caseId,
+                  s.time,
+                  s.alias
+              }).Distinct().OrderBy(x => x.caseId).ToList();
+            foreach (var i in sortedData)
+            {
+                Console.WriteLine("caseId:   " + i.caseId + "          " + "SentTime:   " + i.time + "          " + "Alias:   " + i.alias);
+
+            }
+            return writeCon;
         }
         public static void ExcelTest()
         {
             //导出：将数据库中的数据，存储到一个excel中
-            List<String> id = CaseNumberReader();
-            List<Nums> list = new List<Nums>();
+            List<con> id = CaseNumberReader();
+            var sd =
+            (from s in id
+             select new
+             {
+                 s.caseId,
+                 s.time,
+                 s.alias
+             }).Distinct().OrderBy(x => x.caseId).ToList();
+
             //1、查询数据库数据  
-            for (int i = 0; i < CaseNumberReader().Count; i++)
-            {
-                Nums num = new Nums() { CaseNumber = i + 1, Number = id[i] };
-                list.Add(num);
-            }
             //2、  生成excel
             //2_1、生成workbook
             //2_2、生成sheet
@@ -78,17 +102,24 @@ namespace dotNetEmailReader
             var cellname = row.CreateCell(1);
             cellname.SetCellValue("CaseNumber");
             var cellpwd = row.CreateCell(2);
-            cellpwd.SetCellValue("Number");
+            cellpwd.SetCellValue("Alias");
+            var date = row.CreateCell(3);
+            date.SetCellValue("Date");
+
             //遍历集合，生成行
             int index = 1; //从1行开始写入
-            for (int i = 0; i < list.Count; i++)
+            for (int i = 0; i < sd.Count; i++)
             {
                 int x = index + i;
                 var rowi = sheet.CreateRow(x);
-                var ids = rowi.CreateCell(0);
-                ids.SetCellValue(list[i].CaseNumber);
-                var name = rowi.CreateCell(1);
-                name.SetCellValue(list[i].Number);
+                var seq = rowi.CreateCell(0);
+                seq.SetCellValue(i+1);
+                var ids = rowi.CreateCell(1);
+                ids.SetCellValue(sd[i].caseId);
+                var name = rowi.CreateCell(2);
+                name.SetCellValue(sd[i].alias);
+                var d = rowi.CreateCell(3);
+                d.SetCellValue(sd[i].time.ToString());
             }
             for (int k = 0; k < 6; k++)
             {

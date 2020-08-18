@@ -86,7 +86,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TreeSet.cs" />
     <Compile Include="writeExcel.cs" />
     <Compile Include="OutlookEmails.cs" />
     <Compile Include="Program.cs" />
