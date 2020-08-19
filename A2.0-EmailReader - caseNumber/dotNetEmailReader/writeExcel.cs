@@ -15,7 +15,7 @@ namespace dotNetEmailReader
             public DateTime time { get; set; }
             public string isTask { get; set; }
             public string alias { get; set; }
-
+            public  string severity { get; set; }
         }
       
     }

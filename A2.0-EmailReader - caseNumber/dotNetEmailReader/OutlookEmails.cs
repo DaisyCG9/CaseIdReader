@@ -17,6 +17,7 @@ namespace dotNetEmailReader
         public string EmailTo { get; set; }
         public DateTime EmailDate { get; set; }
 
+
         public static List<OutlookEmails> ReadMailItems()
         { 
             Application outlookApplication = null;
