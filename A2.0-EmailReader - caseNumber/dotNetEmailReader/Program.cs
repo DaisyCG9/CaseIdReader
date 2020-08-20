@@ -25,8 +25,6 @@ namespace dotNetEmailReader
             Console.ReadKey();
         }
 
-        
-
         public static List<con> CaseNumberReader()
         {
             List<con> writeCon = new List<con>();
@@ -59,13 +57,12 @@ namespace dotNetEmailReader
                     string pattern3 = @"\s[A|B|C]\s";
                     Match match3 = Regex.Match(ser.ToString(), pattern3, RegexOptions.IgnoreCase);
                     if (match3.Success)
-                    {
                         data.severity = match3.Value;
-                    }
                     else
-                    {
                         data.severity = "";
-                    }
+
+
+
                     writeCon.Add(data);
                     //id.Add(match1.Value);
                     //time.Add(mail.EmailDate);
