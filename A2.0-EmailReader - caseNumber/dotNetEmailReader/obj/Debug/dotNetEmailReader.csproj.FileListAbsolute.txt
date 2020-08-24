@@ -76,3 +76,5 @@ C:\project\CaseIdReader\A2.0-EmailReader - caseNumber\dotNetEmailReader\obj\Debu
 C:\project\CaseIdReader\A2.0-EmailReader - caseNumber\dotNetEmailReader\obj\Debug\dotNetEmailReader.csproj.CopyComplete
 C:\project\CaseIdReader\A2.0-EmailReader - caseNumber\dotNetEmailReader\obj\Debug\dotNetEmailReader.exe
 C:\project\CaseIdReader\A2.0-EmailReader - caseNumber\dotNetEmailReader\obj\Debug\dotNetEmailReader.pdb
+C:\project\CaseIdReader\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\Microsoft.SharePoint.Client.dll
+C:\project\CaseIdReader\A2.0-EmailReader - caseNumber\dotNetEmailReader\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
